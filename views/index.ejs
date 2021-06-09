@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+  <body>
+    <h1 class="title" >Chat Application</h1>
+    <div class="main" >
+      <div class="name">
+        <span><i class="far fa-user" ></i></span>
+        <input type="text" id="name-input" class="name-input" value="anonymos" max="20">
+      </div>
+
+      <ul class="message-container" id="message-container">
+        
+
+      </ul>
+
+      <form class="message-form" id="message-form">
+        <input type="text" name="message" id="message-input" class="message-input" />
+        <div class="v-divider"></div>
+        <button type="submit"  class="send-button">Send <span><i class="fas fa-paper-plane" ></i></span></button>
+      </form>
+
+    </div>
+    <h3 class="cleints-total" id="client-total" >Total Group Member : </h3>
+  </body>
+  <script src="/socket.io/socket.io.js" ></script>
+  <script src="/javascripts/main.js"></script>
+</html>
